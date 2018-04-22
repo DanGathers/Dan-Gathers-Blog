@@ -1,5 +1,6 @@
-const express        = require('express'),
-     app            = express()
+const express       = require('express'),
+     app            = express(),
+     pug            = require('pug')
 
      app.get("/", (req, res) => {
          res.send("This is the home page!")

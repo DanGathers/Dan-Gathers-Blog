@@ -10,11 +10,13 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'pug');
 app.use(express.static(__dirname + "/public"));
 
+// required routes
+const blogRoutes  = require('./routes/dansblog'),
+      indexRoutes = require('./routes/index')
 
 
-app.get("/", (req, res) => {
-    res.send("This is the home page!")
-});
+app.use("/blogs", blogRoutes);
+app.use("/", indexRoutes);
 
 app.listen(4000, () => {
     console.log("Dan Gathers Blog Server Has Started at PORT:4000!")

@@ -3,13 +3,14 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 .root-navbar {
-    color: #fff8dc;
+    color: #f0efea;
+    font-weight: 100;
+    font-size: 18;
     text-decoration: none;  
     position: relative;
-    top: 20px;
-    padding-left: 115px;
 }
 
 
@@ -18,47 +19,71 @@ ul {
 }
 
 .navbar-right {
+    position: relative;
     text-decoration: none;
-    margin: 1px;
-    padding-right: 15px;
     float: right;
-    color: #fff8dc;
+    color: #f0efea;
 }
 
 .top-nav-container {
-    background: linear-gradient(to bottom right,#3a5fcd, #483d8b);
-    border-bottom: #f2ea09 solid 2px;
-    height: 50px;
+    background: #283655;
+    height: 5%;
     width: 100%;
-    position: center;
 }
-
-#landscape {
-    background-color: linear-gradient(to bottom right, #303030, #030303);
-    background: #030303 url('../images/codescreen.jpeg') center center no-repeat;  
-    background-size: 800px 400px;
-    border-bottom: #f2ea09 solid 2px;
-    
-}   
 
 .landscape {
     color: #fff8dc;
     text-align: center;
-    float: none;
-    height: 400px;
+    float: left;
+    width: 100%;
+    height: 20%;
+    background: #d0e1f9;
 }
 
 .landscape-bottom {
     color: #fff8dc;
     text-align: center;
-    background:linear-gradient(to bottom right,#3a5fcd, #483d8b);
-    background-size: cover;
-    height: 200px;
-    width: 100%;
+    background:#f5f5f5;
+    float:right;
+    height: 55%;
+    width: 25%;
 }
 
-.cards-container {
-    background: #e5e5e5;
-    text-align: center;
-    height:600px;
+
+.card {
+    display: inline-block;
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    border-radius: 4px;
+    border: 1px solid #030303;
+    float: left;
 }
+
+.card-top {
+    background: #acc0e9;
+    height: 100px;
+    border-radius: 4px 4px 0 0;
+
+}
+
+.card-bottom {
+    text-align: center;
+    padding: 20px 50px 15px 50px;
+
+}
+
+.avatar {
+    position: relative;
+    bottom: 35px;
+    text-align: center;
+}
+.avatar-img {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+   
+}
+
+

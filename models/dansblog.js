@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
-let blogSchema = new mongoose.Schema({
+let cardSchema = new mongoose.Schema({
     title: String,
     image: String,
     body: String,
     created: {type: Date, default: Date.now}
 });
 
-module.exports = mongoose.model("Blog", blogSchema);
+module.exports = mongoose.model("Card", cardSchema);

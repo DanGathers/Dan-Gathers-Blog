@@ -13,3 +13,7 @@
     background-size: cover;
     height: 400px;
 }
+
+.landscape-top {
+    float: right;
+}

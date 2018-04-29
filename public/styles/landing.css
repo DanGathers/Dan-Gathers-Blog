@@ -2,7 +2,6 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff;
 }
 
 /* .img-landing {
@@ -11,9 +10,10 @@
 } */
 
 .landscape {
-    background: url("../images/lanone.jpg") center center;
+    background: url("../images/lanone.jpg") center center no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 500px;
+    color: #fff;
 }
 
 .landscape-top h1 {
@@ -48,7 +48,7 @@
     background: #0066ff;
     border: #fff solid 1px;
     position: relative;
-    top: -50px;
+    top: -40px;
     left: 50%;
 }
 
@@ -92,8 +92,38 @@
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
-    color: darkgrey;
+    color: #a9a9a9;
 }
 .landscape-top a:hover {
     color: #ffc107;
 }
+
+.landscape-desc {
+    text-align: center;
+    position: relative;
+    top: 30%;
+    line-height: 50px;
+    font-size: 35px;
+    opacity: 0.75;
+    text-shadow: 3px 8px 8px #030303;
+}
+
+.landscape-lower {
+    position: relative;
+    top: 20px;
+    text-align: center;
+    color: #000;
+    height: 400px;
+}
+
+.foot-span {
+    position: relative;
+    top: 12px;
+    text-align: center;
+    color: #d3d3d3;
+    background: #af4904;
+    height: 20px;
+    text-shadow: 1px 1px #000;
+}
+
+

@@ -8,16 +8,34 @@
 }
  .landscape-head {
      position: relative;
-     margin: 200px 50px 0px 50px;
+     margin: 50px 50px 0px 50px;
+     color: orange;
+}
 
- }
-
-.landscape {
+.landscape-box {
+    background: #000;
+    height: 700px;
+    margin: 50px;
+    padding: 3px;
+}
+.landscape-box-a {
     background: url("../images/lanone.jpg") center center no-repeat;
     background-size: cover;
+    border-radius: 10px;
+    height: 600px;
+    margin: 50px;
+    padding: 3px;
+}
+
+.landscape {
+    position: relative;
+    background: rgba(0,0,0,0.4);
+    border: 1px solid #989898;
+    border-radius: 70px 0 70px 0;
     height: 500px;
-    margin: 0px 50px 0px 50px;
+    padding: 3px;
     color: #fff;
+    margin: 50px;
 }
 
 .landscape-top h1 {
@@ -41,8 +59,9 @@
     top: 10%;
     right: 3%;
     padding: 0 11 12 13;
-    border-radius: 3px;
-    opacity: 0.6;
+    border-radius: 70px 0 70px 0;
+    border: 1px solid #989898;
+    opacity: 0.8;
 }
 
 .avatar-img {
@@ -104,12 +123,12 @@
 }
 
 .landscape-desc {
+    color: #fff;
     text-align: center;
     position: relative;
     top: 30%;
     line-height: 50px;
     font-size: 45px;
-    opacity: 0.75;
     text-shadow: 3px 8px 8px #030303;
     padding: 0px 300px 0px 300px;
 }

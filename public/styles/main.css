@@ -1,102 +1,18 @@
 
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-}
-.root-navbar {
-    color: #f0efea;
-    font-weight: 100;
-    font-size: 18;
-    text-decoration: none;  
-    position: relative;
+    margin: 0;
+    padding: 0;
+    display: grid;
 }
 
-
-ul {
-    list-style-type: none;
-}
-
-.navbar-right {
-    position: relative;
-    text-decoration: none;
-    float: right;
-    color: #f0efea;
-}
-
-.top-nav-container {
-    background: #283655;
-    height: 5%;
-    width: 100%;
-}
-
-.landscape {
-    color: #fff8dc;
-    text-align: center;
-    float: left;
-    width: 100%;
-    height: 20%;
-    background: #d0e1f9;
-    box-shadow: 5px 10px 8px 6px #888888;
-}
-
-.landscape-bottom {
-    color: #fff8dc;
-    text-align: center;
-    background:#52a8f8;
-    float:right;
-    height: 100%;
-    width: 200px;
-    box-shadow: 5px 10px 8px 6px #888888;
+.landscape-middle {
+    grid-template-columns: 400px;
+    background: #060606;
 
 }
 
-.cards-block-one {
-    margin: -10px;
+.cards {
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 50px;
+    margin-left: 20%;
 }
-.cards-block-two {
-    margin: -10px;
-
-}
-
-.card {
-    background: #fff;
-    margin: 50 25 50 100;
-    width: 300px;
-    height: 400px;
-    border-radius: 4px;
-    box-shadow: 5px 10px 8px 6px #888888;
-    padding: 3px;
-    float: left;
-}
-
-.card-top {
-    background: #acc0e9;
-    text-align: center;
-    height: 100px;
-    border-radius: 4px 4px 0 0;
-    
-
-}
-
-.card-bottom {
-    text-align: center;
-    padding: 20px 50px 15px 50px;
-
-}
-
-.avatar {
-    position: relative;
-    bottom: 35px;
-    text-align: center;
-}
-.avatar-img {
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
-    border: 4px solid #fff;
-   
-}
-
-

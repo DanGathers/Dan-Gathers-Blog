@@ -5,9 +5,11 @@ div
     h1 Add New Blog Post
     div.input-box
         form(action="/blogs" method="POST")
-        p Title
-            input(type="text" name="title" placeholder="Title of Blog")
-        p Image
-            input(type="text" name="image" placeholder="Add Image Here")
-        p Post
-            textarea(name="blogpost" placeholder="Add a new blog post here...")
+            div.inputNewBlog
+                input.titleNew(type="text" name="title" placeholder="Title of Blog")
+            div.inputNewBlog
+                input.imageNew(type="text" name="image" placeholder="Add Image Here")
+            div.inputNewBlog
+                textarea.blogNew(name="blogpost" placeholder="Add a new blog post here...")
+            button.blogSubmit Submit!
+    a(href="/blogs") Back

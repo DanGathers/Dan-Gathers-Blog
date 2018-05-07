@@ -7,6 +7,7 @@ router.get("/", function(req, res) {
     res.render("dansblog/index");
 });
 
+
 // CREATE ROUTE - add new blog post to database
 router.post("/", function(req, res) {
     let title = req.body.title;

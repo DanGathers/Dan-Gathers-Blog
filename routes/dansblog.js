@@ -14,7 +14,7 @@ router.post("/", function(req, res) {
     let image = req.body.image;
     let desc = req.body.description;
     let blogPost = req.body.blogpost;
-    let create = req.body.create
+    let created = req.body.created
 
     let newBlog = {title: title, image: image, description: desc, blogpost: blogPost, created: created};
     Blog.create(newBlog, function(err, newlyCreatedBlog) {
@@ -29,6 +29,11 @@ router.post("/", function(req, res) {
 //NEW ROUTE show form to create new blog post
 router.get("/new", function(req, res) {
     res.render("dansblog/new");
+});
+
+//SHOW ROUTE show blog
+router.get("/show", function(req, res) {
+    res.render("dansblog/show");
 });
 
 module.exports = router;

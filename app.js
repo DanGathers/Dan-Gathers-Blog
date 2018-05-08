@@ -2,7 +2,9 @@ const express       = require('express'),
       app           = express(),
       pug           = require('pug'),
       bodyParser    = require('body-parser'),
-      mongoose      = require('mongoose')
+      mongoose      = require('mongoose'),
+      Blog          = require('./models/dansblog')
+
 
 
 mongoose.connect('mongodb://localhost/dansblog');

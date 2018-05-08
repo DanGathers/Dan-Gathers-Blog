@@ -9,4 +9,4 @@ let blogSchema = new mongoose.Schema({
     created: {type: Date, default: Date.now}
 });
 
-module.exports = mongoose.model("Blog", blogSchema);
+module.exports = mongoose.model('Blog', blogSchema);

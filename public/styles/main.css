@@ -16,3 +16,24 @@
     grid-gap: 50px;
     margin-left: 20%;
 }
+
+.blog-title {
+    text-align: center;
+}
+
+.blog-image {
+    height: 200px;
+    width: 300px;
+}
+
+.blog-desc {
+    text-align: center;
+}
+
+.blog-date {
+    text-align: center;
+}
+
+.blog-sig-block {
+    text-align: center;
+}

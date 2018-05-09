@@ -15,7 +15,12 @@ body.landscape-wrapper
 
         .cards
             each blog in blogCard
-                h2.blog-title #{blog.title}
-                img.blog-avatar(src="#{blog.image}")
-                p.blog-desc #{blog.description}
-                p.blog-date #{blog.created}
+                .blog-card-top
+                    h2.blog-title #{blog.title}
+                    img.blog-image(src=blog.image)
+                    p.blog-desc #{blog.description}
+                    p.blog-date #{blog.created}
+                    .blog-sig-block
+                        span
+                            |   by
+                            a(href="#") Dan Gathers

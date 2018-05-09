@@ -5,7 +5,13 @@ let Blog = require('../models/dansblog')
 
 //INDEX ROUTE show all blogs
 router.get("/", function(req, res) {
-    res.render("dansblog/index");
+    Blog.find({}, function(err, allBlogs) {
+        if(err) {
+            console.log(err);
+        } else {
+            res.render('dansblog/index', {blogCard:allBlogs});
+        }
+    });
 });
 
 

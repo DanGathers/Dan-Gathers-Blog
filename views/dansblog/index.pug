@@ -8,20 +8,14 @@ body.landscape-wrapper
             h3 Blog
             a.create-blog(href="blogs/new") Add New Blog
         
-        div.landscape-middle
+        .landscape-middle
             h3 Tech News
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium id provident amet aut commodi quaerat ducimus voluptate a dolor illo, corrupti sit adipisci aperiam qui placeat magnam voluptas nihil. Suscipit adipisci, cumque magni, aliquam architecto ipsa ipsum repellat quae nulla ea distinctio assumenda perferendis impedit dolorem itaque! Fugiat doloribus culpa magni ab. Tenetur sunt deserunt exercitationem error quas. Ea tempore facilis atque architecto obcaecati maxime vel eligendi, doloremque adipisci nam cumque inventore sunt doloribus porro asperiores esse impedit, illo explicabo!
 
 
-        div.cards
-            div.card
-                div.card-top
-                     span Super Mom
-                div.avatar
-                    img.avatar-img(src="blog.image")
-                    h5 Mrs. Goldberg
-                div.card-bottom
-                    p Lifes a garden dig it! gotta keep on keepin on..
+        .cards
+            each blog in blogCard
+                img(src='#{blogCard.image}')
                     
  
             

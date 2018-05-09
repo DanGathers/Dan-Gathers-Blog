@@ -19,11 +19,11 @@ router.get("/", function(req, res) {
 router.post("/", function(req, res) {
     let title = req.body.title;
     let image = req.body.image;
-    let desc = req.body.description;
+    let description = req.body.description;
     let blogPost = req.body.blogpost;
     let created = req.body.created;
 
-    let newBlog = {title: title, image: image, description: desc, blogpost: blogPost, created: created};
+    let newBlog = {title: title, image: image, description: description, blogpost: blogPost, created: created};
     Blog.create(newBlog, function(err, newlyCreatedBlog) {
         if(err) {
             console.log(err);

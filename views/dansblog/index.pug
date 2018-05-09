@@ -15,8 +15,7 @@ body.landscape-wrapper
 
         .cards
             each blog in blogCard
-                img(src='#{blogCard.image}')
-                    
- 
-            
-        
+                h2.blog-title #{blog.title}
+                p.blog-image #{blog.image}
+                p.blog-post #{blog.blogpost}
+                p.blog-date #{blog.created}

@@ -6,27 +6,29 @@
 }
 
 .landscape {
-    grid-gap: 10px;
-    grid-template-columns: repeat(8, 1fr); 
-    grid-template-rowss: repeat(4, minmax(150px, auto)); 
+    grid-gap: 10px; 
+    grid-template-columns: repeat(8, 4fr);
+    grid-template-rows: repeat(4, minmax(150px, auto)); 
 }
 
 .landscape-top {
-    grid-column: 1/9;
+    grid-column: 2/8;
     grid-row: 1;
     background: #57df57;
 }
 
 .right-sidebar {
-    grid-column: 7/9;
+    grid-column: 7/8;
     grid-row: 2;
     background: #84e7fe;
 }
 
 .cards {
-    grid-column: 4/7;
+    grid-column: 3/6;
+    grid-template-columns: repeat(2, 2fr);
     grid-row: 2;
-    background: #ffff00;
+    grid-gap: 30px;
+    background: #fff;
 }
 
 .blog-card-top {

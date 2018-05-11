@@ -2,17 +2,11 @@ include ../partials/header.pug
     
 link(rel="stylesheet" href="../styles/main.css")
 body
-    div.landscape-wrapper
+    .landscape
         .landscape-top
             a(href="blogs/show") Show Page
             h3 Blog
             a.create-blog(href="blogs/new") Add New Blog
-        
-        .right-sidebar
-            h3 Tech News
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium id provident amet aut commodi quaerat ducimus voluptate a dolor illo, corrupti sit adipisci aperiam qui placeat magnam voluptas nihil. Suscipit adipisci, cumque magni, aliquam architecto ipsa ipsum repellat quae nulla ea distinctio assumenda perferendis impedit dolorem itaque! Fugiat doloribus culpa magni ab. Tenetur sunt deserunt exercitationem error quas. Ea tempore facilis atque architecto obcaecati maxime vel eligendi, doloremque adipisci nam cumque inventore sunt doloribus porro asperiores esse impedit, illo explicabo!
-
-
         .cards
             each blog in blogCard
                 .blog-card-top
@@ -21,6 +15,7 @@ body
                     p.blog-desc #{blog.description}
                     p.blog-date #{blog.created}
                     .blog-sig-block
-                        span
-                            |   by
-                            a(href="#") Dan Gathers
+                        a(href="#") Dan Gathers
+        .right-sidebar
+            h3 Tech News
+            p Lorem ipsum dolor

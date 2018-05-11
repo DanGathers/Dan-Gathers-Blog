@@ -3,17 +3,17 @@ html(lang='en')
     head
         meta(charset-'utf-8')
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="../styles/partials.css")
     body
-        nav.top-nav
-            div.top-nav-container
-                div.root-nav
-                    a.root-navbar(href="/") Home
-                    div.right-nav
-                        ul
-                            li 
-                                a.navbar-right(href="/login") Login
-                            li
-                                a.navbar-right(href="/register") Sign Up
-                            li
-                                a.navbar-right(href="logout") Logout
+        .root-nav
+            .left-nav
+                a.root-navbar(href="/") Home
+            .right-nav
+                ul
+                    li 
+                        a.navbar-right(href="/login") Login
+                    li
+                        a.navbar-right(href="/register") Sign Up
+                    li
+                        a.navbar-right(href="logout") Logout
         

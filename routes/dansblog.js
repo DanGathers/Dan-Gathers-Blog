@@ -1,7 +1,6 @@
 let express = require('express');
 let router = express.Router();
 let Blog = require('../models/dansblog')
-// let blogs = require('../models/dansblog');
 
 //INDEX ROUTE show all blogs
 router.get("/", function(req, res) {
@@ -21,9 +20,8 @@ router.post("/", function(req, res) {
     let image = req.body.image;
     let description = req.body.description;
     let blogPost = req.body.blogpost;
-    let created = req.body.created;
 
-    let newBlog = {title: title, image: image, description: description, blogpost: blogPost, created: created};
+    let newBlog = {title: title, image: image, description: description, blogpost: blogPost};
     Blog.create(newBlog, function(err, newlyCreatedBlog) {
         if(err) {
             console.log(err);

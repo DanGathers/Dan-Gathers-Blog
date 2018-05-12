@@ -17,11 +17,15 @@ a {
 .left-nav {
     grid-column: 2/6;
     grid-row: 1;
-    background: #86ceff;
+    background: #fff;
 }
 
 .right-nav {
     grid-column: 6/8;
     grid-row: 1;
-    background: #f3d;
+    background: #fff;
+}
+
+.nav-wrapper {
+    grid-template-columns: repeat(3, 1fr);
 }

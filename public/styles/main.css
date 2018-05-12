@@ -12,15 +12,18 @@
 }
 
 .landscape-top {
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 36px;
     grid-column: 2/8;
     grid-row: 1;
-    background: #57df57;
+    background: #fff;
+    text-align: center;
 }
 
 .right-sidebar {
     grid-column: 7/8;
     grid-row: 2;
-    background: #84e7fe;
+    background: #fff;
 }
 
 .cards {
@@ -35,7 +38,6 @@
 }
 
 .blog-title {
-
 }
 
 .blog-image {
@@ -47,6 +49,7 @@
 }
 
 .blog-date {
+    font-size: 8px;
 }
 
 .blog-sig-block {

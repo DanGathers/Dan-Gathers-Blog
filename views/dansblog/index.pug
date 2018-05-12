@@ -4,8 +4,8 @@ link(rel="stylesheet" href="../styles/main.css")
 body
     .landscape
         .landscape-top
+            h3 Dan Gathers Blog
             a(href="blogs/show") Show Page
-            h3 Blog
             a.create-blog(href="blogs/new") Add New Blog
         .cards
             each blog in blogCard
@@ -13,8 +13,7 @@ body
                     h2.blog-title #{blog.title}
                     img.blog-image(src=blog.image)
                     p.blog-desc #{blog.description}
-                    p.blog-date #{blog.created}
                     .blog-sig-block
-                        a(href="#") Dan Gathers
+                        a(href="#") Dan Gathers                   
+                    p.blog-date Posted on: #{blog.created}
         .right-sidebar
-            h3 About Me

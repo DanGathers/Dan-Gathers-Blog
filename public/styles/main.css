@@ -1,17 +1,15 @@
 
 * {
-    margin: 0;
-    padding: 0;
-    display: grid;
+
 }
 
-.landscape {
+.mainroom {
     grid-gap: 10px; 
     grid-template-columns: repeat(8, 4fr);
     grid-template-rows: repeat(4, minmax(150px, auto)); 
 }
 
-.landscape-top {
+.mainroom-top {
     grid-template-columns: repeat(3, 1fr);
     font-size: 36px;
     grid-column: 2/8;

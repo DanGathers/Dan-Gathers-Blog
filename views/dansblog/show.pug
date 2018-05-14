@@ -4,4 +4,14 @@ title Show Page
 link(type="text/css" rel="stylesheet" href="../styles/show.css")
 body
     .showroom
-        h1 This is the Show Room!
+        .showroom-top
+            h1 Dan's Blog
+        .showblog-card
+            each blog in blogCard
+                .showblog-card-top
+                    h2.showblog-title #{blog.title}
+                    //- img.showblog-image(src=blogShow.image)
+                    //- p.showblog-post #{blogShow.blogpost}
+                    //- .showblog-sig-block
+                    //-     a(href="#") Dan Gathers                   
+                    //- p.showblog-date Posted on: #{blogShow.created}

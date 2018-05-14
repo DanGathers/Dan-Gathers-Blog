@@ -37,8 +37,14 @@ router.get("/new", function(req, res) {
 });
 
 //SHOW ROUTE show blog
-router.get("/show", function(req, res) {
-    res.render("dansblog/show");
+router.get("/:id", function(req, res) {
+    Blog.findById(req.params.id).populate('comments').exec(function(err, foundBlog) {
+        if(err) {
+            console.log(err);
+        } else {
+            res.render("dansblog/show", {blogShow: foundBlog});
+        }
+    });
 });
 
 module.exports = router;

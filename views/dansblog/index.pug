@@ -5,15 +5,15 @@ body
     .mainroom
         .mainroom-top
             h3 Dan Gathers Blog
-            a(href="blogs/show") Show Page
             a.create-blog(href="blogs/new") Add New Blog
         .cards
             each blog in blogCard
                 .blog-card-top
-                    h2.blog-title #{blog.title}
-                    img.blog-image(src=blog.image)
-                    p.blog-desc #{blog.description}
-                    .blog-sig-block
-                        a(href="#") Dan Gathers                   
-                    p.blog-date Posted on: #{blog.created}
+                    a.blog-show(href="/blogs/ + blogs._id")
+                        h2.blog-title #{blog.title}
+                        img.blog-image(src=blog.image)
+                        p.blog-desc #{blog.description}
+                        .blog-sig-block
+                            a(href="#") Dan Gathers                   
+                        p.blog-date Posted on: #{blog.created}
         .right-sidebar

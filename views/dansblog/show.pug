@@ -7,11 +7,10 @@ body
         .showroom-top
             h1 Dan's Blog
         .showblog-card
-            each blog in blogCard
-                .showblog-card-top
-                    h2.showblog-title #{blog.title}
-                    //- img.showblog-image(src=blogShow.image)
-                    //- p.showblog-post #{blogShow.blogpost}
-                    //- .showblog-sig-block
-                    //-     a(href="#") Dan Gathers                   
-                    //- p.showblog-date Posted on: #{blogShow.created}
+            .showblog-card-top
+                h2.showblog-title #{blogCard.image}
+                //- img.showblog-image(src=blogShow.image)
+                //- p.showblog-post #{blogShow.blogpost}
+                //- .showblog-sig-block
+                //-     a(href="#") Dan Gathers                   
+                //- p.showblog-date Posted on: #{blogShow.created}

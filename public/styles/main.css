@@ -1,32 +1,31 @@
 
 .mainroom {
     display: grid;
-    grid-gap: 10px; 
-    grid-template-columns: repeat(8, 4fr);
-    grid-template-rows: repeat(4, minmax(150px, auto)); 
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
 }
 
 .mainroom-top {
-    grid-template-columns: repeat(3, 1fr);
-    font-size: 36px;
     grid-column: 2/8;
     grid-row: 1;
-    background: #fff;
+    background: #8fedb6;
     text-align: center;
 }
 
 .right-sidebar {
     grid-column: 7/8;
     grid-row: 2;
-    background: #fff;
+    text-align: center;
+    background: #f5b9b9;
 }
 
 .cards {
-    grid-column: 3/6;
-    grid-template-columns: repeat(2, 2fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 4/5;
     grid-row: 2;
-    grid-gap: 30px;
-    background: #fff;
+    grid-gap: 60px;
+    background: #9ad1f5;
 }
 
 .blog-card-top {

@@ -42,9 +42,9 @@ router.get("/:id", function(req, res) {
         if(err) {
             console.log(err);
         } else {
-            res.render("dansblog/show", {blogCard: foundBlog});
+            res.render("dansblog/show", {blogShow: foundBlog});
         }
-    });
+    })
 });
 
 module.exports = router;

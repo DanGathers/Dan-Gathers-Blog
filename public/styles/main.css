@@ -29,22 +29,34 @@
 }
 
 .blog-card-top {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
 }
 
 .blog-title {
+    grid-row: 1;
 }
 
 .blog-image {
+    grid-row: 2;
     height: 200px;
     width: 400px;
 }
 
 .blog-desc {
+    grid-row: 3;
 }
 
 .blog-date {
+    grid-row: 5;
     font-size: 8px;
 }
 
-.blog-sig-block {
+.blog-sig {
+    grid-row: 4;
+}
+
+.showpage {
+    grid-row: 6;
 }

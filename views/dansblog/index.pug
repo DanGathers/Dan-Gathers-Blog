@@ -13,9 +13,8 @@ body
                     h2.blog-title #{blog.title}
                     img.blog-image(src=blog.image)
                     p.blog-desc #{blog.description}
-                    .blog-sig-block
-                        a(href="#") Dan Gathers                   
+                    p.blog-sig By #[a(href="#") Dan Gathers]   
                     p.blog-date Posted on: #{blog.created}
-                    p
+                    p.showpage
                         a.blog-show(href="/blogs/ + blogs._id") Show Page
         .right-sidebar

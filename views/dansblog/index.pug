@@ -15,6 +15,5 @@ body
                     p.blog-desc #{blog.description}
                     p.blog-sig By #[a(href="#") Dan Gathers]   
                     p.blog-date Posted on: #{blog.created}
-                    p.showpage
-                        a.blog-show(href="/blogs/ + blogs._id") Show Page
+                    a.showpage(href="/blogs/ + blogCard._id") Read Blog
         .right-sidebar

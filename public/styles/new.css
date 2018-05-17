@@ -1,0 +1,86 @@
+.input-room {
+    background: #314256;
+    margin: 0;
+    padding: 0;
+}
+
+.content-room {
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.input-box {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.input-form {
+    background: #91a6b8;
+    grid-column: 4;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.input-title {
+    grid-column: 4;
+    grid-row: 1;
+}
+.titleNew {
+    height: 50px;
+    width: 800px;
+    font-size: 32px;
+}
+
+.input-image {
+    grid-column: 4;
+    grid-row: 2;
+}
+.imageNew {
+    height: 50px;
+    width: 800px;
+    font-size: 32px;
+}
+
+
+.input-desc {
+    grid-column: 4;
+    grid-row: 3;
+}
+.descNew {
+    height: 50px;
+    width: 800px;
+    font-size: 32px;
+}
+
+.blog-wrap {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+
+.input-blog {
+    background: #91a6b8;
+    grid-column: 4;
+    grid-row: 4;
+}
+.blogNew {
+    resize: none;
+    height: 500px;
+    width: 800px;
+    font-size: 32px;
+}
+
+.input-submit {
+    grid-column: 4;
+    grid-row: 5;
+    font-size: 32px;
+}
+
+.input-wrapper {
+    background: #91a6b8;
+    grid-column: 4;
+    margin-top: 40px;
+    padding: 30px;
+    border: #000 3px solid;
+    border-radius: 10px;
+}

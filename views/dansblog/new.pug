@@ -1,17 +1,21 @@
 include ../partials/header.pug
 title New Blog
 link(text="text/css" rel="stylesheet" href="../styles/new.css")
-div
-    h1 Add New Blog Post
-    .input-box
-        form(action="/blogs" method="POST")
-            .input-title
-                input.titleNew(type="text" name="title" placeholder="Title of Blog")
-            .input-image
-                input.imageNew(type="text" name="image" placeholder="Add Image Here")
-            .input-desc
-                input.descNew(type="text" name="description" placeholder="Describe Blog Here")
-            .input-blog
-                textarea.blogNew(name="blogpost" placeholder="Add a new blog post here...")
-            button.blogSubmit Submit!
-    a(href="/blogs") Back
+
+body.input-room
+    .content-room
+        .input-wrapper
+            h1 Add New Blog Post
+            .input-box
+                form.input-form(action="/blogs" method="POST")
+                    .input-title
+                        input.titleNew(type="text" name="title" placeholder="Title of Blog")
+                    .input-image
+                        input.imageNew(type="text" name="image" placeholder="Add Image Here")
+                    .input-desc
+                        input.descNew(type="text" name="description" placeholder="Describe Blog Here")
+            .blog-wrap
+                .input-blog
+                    textarea.blogNew(name="blogpost" placeholder="Add a new blog post here...")
+                button.input-submit Submit!
+            a(href="/blogs") Back

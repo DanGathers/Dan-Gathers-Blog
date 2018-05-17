@@ -1,4 +1,6 @@
-
+.mainfloor {
+    background: #e4e4e4;
+}
 .mainroom {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -8,30 +10,41 @@
 .mainroom-top {
     grid-column: 2/8;
     grid-row: 1;
-    background: #8fedb6;
     text-align: center;
+}
+.mainroom-top h3 {
+    font-size: 32px;
 }
 
 .right-sidebar {
     grid-column: 7/8;
     grid-row: 2;
     text-align: center;
-    background: #f5b9b9;
 }
 
 .cards {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column: 4/5;
     grid-row: 2;
     grid-gap: 60px;
-    background: #9ad1f5;
 }
 
 .blog-card-top {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr;
+}
+.blog-card-top:hover {
+    box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+    transform: translate(0px, -10px);
 }
 
 .blog-title {

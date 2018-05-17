@@ -20,12 +20,12 @@ ul {
 
 .left-nav {
     grid-column: 3/4;
-    background: #e070f7;
+    background: #fff;
 }
 
 .right-nav {
-    grid-column: 6/8;
-    background: #ffc851;
+    grid-column: 5/7;
+    background: #fff;
 }
 
 .nav-wrapper {

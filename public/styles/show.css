@@ -1,4 +1,47 @@
 
 .showroom {
-    background: #00c99d;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background: #fff;
+}
+
+.showroom-title {
+    grid-column: 4;
+    grid-row: 1;
+    font-size: 32px;
+    border: #2b2b2b 2px solid;
+    border-radius: 10px;
+}
+
+.showroom-desc {
+    grid-column: 4;
+    grid-row: 2;
+    font-size: 24px;
+}
+
+.showroom-image {
+    grid-column: 4;
+    grid-row: 3;
+}
+.show-image {
+    width: 800px;
+    height: 400px;
+}
+
+.showroom-blogpost {
+    grid-column: 4;
+    grid-row: 4;
+    font-size: 24px;
+    
+
+}
+
+.showroom-sig {
+    grid-column: 4;
+    grid-row: 5;
+}
+
+.showroom-date {
+    grid-column: 4;
+    grid-row: 6;
 }

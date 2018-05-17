@@ -4,5 +4,15 @@ title Show Page
 link(type="text/css" rel="stylesheet" href="../styles/show.css")
 body
     .showroom
-        h1 This is the showroom
-        p.blog-post= blogShow.blogpost
+        .showroom-title
+            h1.show-title= blogShow.title
+        .showroom-desc
+            p.show-desc= blogShow.description
+        .showroom-image
+            img.show-image(src=blogShow.image)
+        .showroom-blogpost
+            p.show-blogpost= blogShow.blogpost
+        .showroom-sig
+            p.show-sig By #[a(href="#") Dan Gathers]
+        .showroom-date
+            p.show-date= blogShow.created 

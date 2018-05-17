@@ -10,10 +10,10 @@ body
         .cards
             each blog in blogCard
                 .blog-card-top
-                    h2.blog-title #{blog.title}
-                    img.blog-image(src=blog.image)
-                    p.blog-desc #{blog.description}
-                    p.blog-sig By #[a(href="#") Dan Gathers]   
-                    p.blog-date Posted on: #{blog.created}
-                    a.showpage(href='/blogs/' + blog._id) Read Blog
+                    a(href='/blogs/' + blog._id)
+                        h2.blog-title #{blog.title}
+                        img.blog-image(src=blog.image)
+                        p.blog-desc #{blog.description}
+                        p.blog-sig By #[a(href="#") Dan Gathers]   
+                        p.blog-date Posted on: #{blog.created}
         .right-sidebar

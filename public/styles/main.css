@@ -1,5 +1,5 @@
 .mainfloor {
-    background: #f4f4f4;
+    background: #4a93a3;
 }
 .mainroom {
     display: grid;
@@ -10,13 +10,20 @@
 .mainroom-top {
     grid-column: 2/8;
     grid-row: 1;
-    background: #060606;
-    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background: #9595ee;
+    color: #f2d562;
+    text-shadow: 1px 1px 0px #060606;
     height: 140px;
     border-radius: 3px;
+    background-image: url("../images/gatherwork.png");
+    background-position: left center;
+    background-size: cover;
 }
 .mainroom-top h3 {
-    font-size: 40px;
+    font-size: 60px;
+    grid-column: 2/5;
 }
 
 .right-sidebar {
@@ -35,7 +42,7 @@
 }
 
 .blog-card-top {
-    background: #fff;
+    background: #f2d562;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);

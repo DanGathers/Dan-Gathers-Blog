@@ -2,17 +2,21 @@ include ../partials/header.pug
 
 title Show Page
 link(type="text/css" rel="stylesheet" href="../styles/show.css")
-body
+body.mainshow
+    .mainroom
+        .mainroom-top
+            h3 Dan Gathers Blog
     .showroom
-        .showroom-title
-            h1.show-title= blogShow.title
-        .showroom-desc
-            p.show-desc= blogShow.description
-        .showroom-image
-            img.show-image(src=blogShow.image)
-        .showroom-blogpost
-            p.show-blogpost= blogShow.blogpost
-        .showroom-sig
-            p.show-sig By #[a(href="https://github.com/DanGathers") Dan Gathers]
-        .showroom-date
-            p.show-date= blogShow.created 
+        .showroom-wrapper
+            .showroom-title
+                h1.show-title= blogShow.title
+            .showroom-desc
+                p.show-desc= blogShow.description
+            .showroom-image
+                img.show-image(src=blogShow.image)
+            .showroom-blogpost
+                p.show-blogpost= blogShow.blogpost
+            .showroom-sig
+                p.show-sig By #[a(href="https://github.com/DanGathers") Dan Gathers]
+            .showroom-date
+                p.show-date= blogShow.created 

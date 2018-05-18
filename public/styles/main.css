@@ -1,5 +1,5 @@
 .mainfloor {
-    background: #e4e4e4;
+    background: #f4f4f4;
 }
 .mainroom {
     display: grid;
@@ -10,10 +10,13 @@
 .mainroom-top {
     grid-column: 2/8;
     grid-row: 1;
-    text-align: center;
+    background: #060606;
+    color: #fff;
+    height: 140px;
+    border-radius: 3px;
 }
 .mainroom-top h3 {
-    font-size: 32px;
+    font-size: 40px;
 }
 
 .right-sidebar {

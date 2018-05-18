@@ -43,7 +43,7 @@
 }
 
 .blog-card-top {
-    background: #f2d562;
+    background: #e15d3ca3;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
@@ -60,16 +60,21 @@
 
 .blog-title {
     grid-row: 1;
+    font-size: 40px;
+    padding: 3px;
 }
 
 .blog-image {
     grid-row: 2;
     height: 200px;
     width: 400px;
+    border-radius: 5px;
 }
 
 .blog-desc {
     grid-row: 3;
+    font-size: 24px;
+    padding: 5px;
 }
 
 .blog-date {
@@ -83,4 +88,17 @@
 
 .showpage {
     grid-row: 6;
+}
+
+.id-link {
+    color: #4a93a3;
+    text-shadow: 1px 1px 2px #000;
+    font-weight: 600;
+
+}
+
+.git-link {
+    color: #f2d562;
+    text-shadow: 2px 2px 2px #000;
+    font-weight: 600;
 }

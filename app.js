@@ -6,7 +6,7 @@ const express       = require('express'),
       Blog          = require('./models/dansblog')
 
 
-
+// APP CONFIG
 mongoose.connect('mongodb://localhost/dansblog');
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'pug');
@@ -19,6 +19,7 @@ const blogRoutes  = require('./routes/dansblog'),
 
 app.use("/blogs", blogRoutes);
 app.use("/", indexRoutes);
+
 
 app.listen(4000, () => {
     console.log("Dan Gathers Blog Server Has Started at PORT:4000!")

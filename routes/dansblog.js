@@ -47,4 +47,26 @@ router.get("/:id", function(req, res) {
     })
 });
 
+// EDIT ROUTE
+router.get("/:id/edit", function(req, res){
+    Blog.findById(req.params.id, function(err, foundBlog) {
+        if(err) {
+            console.log(err);
+        } else {
+            res.render("dansblog/edit", {blogEdit: foundBlog});
+        }
+    })
+})
+
+// UPDATE ROUTE
+router.post("/:id", function(req, res){
+    Blog.findByIdAndUpdate(req.params.id, req.body.editblog, function(err, updateBlog) {
+        if(err){
+            console.log(err);
+        } else {
+            res.redirect("/blogs/" + req.params.id);
+        }
+    });
+});
+
 module.exports = router;

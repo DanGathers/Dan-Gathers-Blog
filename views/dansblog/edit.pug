@@ -1,0 +1,21 @@
+include ../partials/header.pug
+title Edit Blog
+link(text="text/css" rel="stylesheet" href="../styles/new.css")
+
+
+body.input-room
+    .content-room
+        .input-wrapper
+            h3 Edit #[h3= blogEdit.title]
+            .input-box
+                form.input-form(action='/blogs/:id/edit/' + blogEdit._id method='POST')
+                    .input-title
+                        input.titleNew(type="text" name="editblog[title]" value=blogEdit.title)
+                    .input-image
+                        input.imageNew(type="text" name="editblog[image]" value=blogEdit.image)
+                    .input-desc
+                        input.descNew(type="text" name="editblog[description]" value=blogEdit.description)
+                    .input-blog
+                        textarea.blogNew(name="editblog[blogpost]" placeholder="Add a new blog post here...")=blogEdit.blogpost
+                    button.input-submit Submit!
+            a(href="/blogs") Back

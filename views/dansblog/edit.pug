@@ -1,4 +1,5 @@
 include ../partials/header.pug
+
 title Edit Blog
 link(text="text/css" rel="stylesheet" href="../styles/new.css")
 
@@ -8,7 +9,7 @@ body.input-room
         .input-wrapper
             h3 Edit #[h3= blogEdit.title]
             .input-box
-                form.input-form(action='/blogs/:id/edit/' + blogEdit._id method='POST')
+                form.input-form(action='/blogs/edit/?_method=PUT' + blogEdit._id)
                     .input-title
                         input.titleNew(type="text" name="editblog[title]" value=blogEdit.title)
                     .input-image

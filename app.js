@@ -2,6 +2,7 @@ const express       = require('express'),
       app           = express(),
       pug           = require('pug'),
       bodyParser    = require('body-parser'),
+      methodOverride= require('method-override'),
       mongoose      = require('mongoose'),
       Blog          = require('./models/dansblog')
 
@@ -11,6 +12,7 @@ mongoose.connect('mongodb://localhost/dansblog');
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'pug');
 app.use(express.static(__dirname + "/public"));
+app.use(methodOverride('_method'));
 
 // required routes
 const blogRoutes  = require('./routes/dansblog'),

@@ -19,5 +19,9 @@ body.mainshow
             .showroom-sig
                 p.show-sig By #[a.git-link(href="https://github.com/DanGathers") Dan Gathers]
             .showroom-date
-                p.show-date= blogShow.created 
+                p.show-date= blogShow.created
+            br
             a.edit-blog(href='/blogs/edit/' + blogShow._id) Edit Blog
+            form(action='/blogs/' + blogShow._id + '?_method=DELETE' method="POST")
+                br
+                button Delete Blog

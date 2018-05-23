@@ -69,4 +69,15 @@ router.put("/edit/:id", function(req, res){
     });
 });
 
+// DELETE ROUTE
+router.delete("/:id", function(req, res) {
+    Blog.findByIdAndRemove(req.params.id, function(err) {
+        if(err) {
+            res.redirect("/blogs");
+        } else {
+            res.redirect("/blogs");
+        }
+    })
+});
+
 module.exports = router;

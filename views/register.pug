@@ -1,0 +1,13 @@
+.reg-wrapper
+    h1 Add New Blog Post
+    .reg-box
+        form.reg-form(action="/blogs" method="POST")
+            .reg-name
+                input.nameNew(type="text" name="name" placeholder="Login Name")
+            .reg-password
+                input.passwordNew(type="text" name="password" placeholder="Password")
+            .reg-Oauth
+                ul.oauthNew-list
+                    li.googleNew a.    
+            button.input-submit Submit!
+    a(href="/blogs") Back

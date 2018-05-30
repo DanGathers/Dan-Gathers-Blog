@@ -1,13 +1,14 @@
-.reg-wrapper
-    h1 Add New Blog Post
-    .reg-box
-        form.reg-form(action="/blogs" method="POST")
-            .reg-name
-                input.nameNew(type="text" name="name" placeholder="Login Name")
+
+.reg-box
+    h1.reg-title Register your account here
+    .input-box
+        form.reg-form(action="/register" method="POST")
+            .reg-login
+                input.regNew(type="text" name="username" placeholder="Username name")
             .reg-password
-                input.passwordNew(type="text" name="password" placeholder="Password")
-            .reg-Oauth
-                ul.oauthNew-list
-                    li.googleNew a.    
-            button.input-submit Submit!
-    a(href="/blogs") Back
+                input.passNew(type="text" name="password" placeholder="Password")
+            button.reg-btn Sign Up
+    .reg-Oauth
+        .reg-google
+            a.google-link(href="/google") Google+
+

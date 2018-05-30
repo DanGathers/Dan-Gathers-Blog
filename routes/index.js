@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const passport = require('passport');
 
 
 
@@ -25,9 +26,8 @@ router.get("/logout", (req, res) => {
 });
 
 // OAuth with Google+
-router.get("/google", (req, res) => {
-    // handle with Passport
-    res.send("Logging in with Google+")
-})
+router.get('/google', passport.authenticate('google', {
+    scope: ['profile']
+}));
 
 module.exports = router;

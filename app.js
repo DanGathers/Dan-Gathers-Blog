@@ -6,7 +6,7 @@ const express       = require('express'),
       mongoose      = require('mongoose'),
       Blog          = require('./models/dansblog')
       passport      = require('passport'),
-      GoogleStrategy= require('passport-google-oauth'),
+      GoogleStrategy= require('passport-google-oauth').OAuth2Strategy,
       keys          = require ('./config/keys')
 
 // APP CONFIG
@@ -26,12 +26,13 @@ app.use("/", indexRoutes);
 
 // PASSPORT CONFIGURATION
 passport.use(new GoogleStrategy({
+      callbackURL: '/google/auth',
       clientID: keys.google.clentID,
       clientSecrete: keys.google.clientSecret
-      }), () =>  {
+      }, () =>  {
 
-      }
-)
+      })
+);
 
 app.listen(4000, () => {
     console.log("Dan Gathers Blog Server Has Started at PORT:4000!")

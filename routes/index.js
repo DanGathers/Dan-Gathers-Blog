@@ -30,4 +30,7 @@ router.get('/google', passport.authenticate('google', {
     scope: ['profile']
 }));
 
+// OAuth with Twitter
+router.get('/twitter', passport.authenticate('twitter'));
+
 module.exports = router;

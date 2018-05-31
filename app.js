@@ -7,6 +7,7 @@ const express       = require('express'),
       Blog          = require('./models/dansblog')
       passport      = require('passport'),
       GoogleStrategy= require('passport-google-oauth').OAuth2Strategy,
+      TwitterStrategy=require('passport-twitter'),
       keys          = require ('./config/keys')
 
 // APP CONFIG
@@ -27,8 +28,18 @@ app.use("/", indexRoutes);
 // PASSPORT CONFIGURATION
 passport.use(new GoogleStrategy({
       callbackURL: '/google/auth',
-      clientID: keys.google.clentID,
-      clientSecrete: keys.google.clientSecret
+      clientID: keys.google.clientID,
+      clientSecret: keys.google.clientSecret
+      }, () =>  {
+
+      })
+);
+
+// TWITTER CONFIGURATION
+passport.use(new TwitterStrategy({
+      callbackURL: '/twitter/auth',
+      consumerKey: keys.twitter.consumerKey,
+      consumerSecret: keys.twitter.consumerSecret
       }, () =>  {
 
       })

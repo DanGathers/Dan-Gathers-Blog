@@ -33,4 +33,9 @@ router.get('/google', passport.authenticate('google', {
 // OAuth with Twitter
 router.get('/twitter', passport.authenticate('twitter'));
 
+router.get('http://127.0.0.1:4000/twitter/auth', passport.authenticate('twitter', {
+    successRedirect: '/success',
+    failureRedirect: '/login'
+}));
+
 module.exports = router;

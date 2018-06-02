@@ -30,12 +30,16 @@ router.get('/google', passport.authenticate('google', {
     scope: ['profile']
 }));
 
+router.get('/google/auth', passport.authenticate('google'), (req, res) => {
+    res.send("you've reached the callback URI");
+});
+
 // OAuth with Twitter
-router.get('/twitter', passport.authenticate('twitter'));
+router.get('/twitter/auth', passport.authenticate('twitter'));
 
 router.get('http://127.0.0.1:4000/twitter/auth', passport.authenticate('twitter', {
-    successRedirect: '/success',
-    failureRedirect: '/login'
+    successRedirect: '/twitter',
+    failureRedirect: '/register'
 }));
 
 module.exports = router;

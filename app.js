@@ -6,9 +6,10 @@ const express       = require('express'),
       mongoose      = require('mongoose'),
       Blog          = require('./models/dansblog')
       passport      = require('passport'),
-      keys          = require ('./config/keys'),
+      localStrategy = require('passport-local'),
       session       = require('express-session'),
-      User          = require('./models/user')
+      User          = require('./models/user'),
+      Comment       = require('./models/comment')
 
 // APP CONFIG
 mongoose.connect('mongodb://localhost/dansblog');
@@ -26,6 +27,17 @@ app.use("/blogs", blogRoutes);
 app.use("/", indexRoutes);
 
 // PASSPORT CONFIGURATION
+// app.use(require('express-session')({
+//       secrete: "is it safe",
+//       resave: false,
+//       saveUninitialized: false
+// }));
+
+// app.use(passport-initialize());
+// app.use(passport-session());
+// passport.use(new localStrategy(User.authenticate()));
+// passport.serializeUser(User.serializeUser());
+// passport.deserializeUser(User.deserializeUser());
 
 
 app.listen(4000, () => {

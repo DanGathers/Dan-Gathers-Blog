@@ -28,4 +28,8 @@ body.mainshow
     .comment-room
         .comment-room-wrapper
             .comment-room-floor
-                
+                form.blog-chatbox(action='/blogs/' + blogShow._id method="POST")
+                    .chatroom
+                        textarea.chatter(type="text" name="comment" placeholder="text")
+                    .chat-submit
+                        button.chatSubmit Submit    

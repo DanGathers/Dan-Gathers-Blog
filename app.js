@@ -19,12 +19,14 @@ app.use(express.static(__dirname + "/public"));
 app.use(methodOverride('_method'));
 app.use(session({secret: 'whatever', resave: true, saveUninitialized: true}));
 // required routes
-const blogRoutes  = require('./routes/dansblog'),
-      indexRoutes = require('./routes/index')
+const blogRoutes    = require('./routes/dansblog'),
+      indexRoutes   = require('./routes/index'),
+      commentRoutes = require('./routes/comments')
 
 
 app.use("/blogs", blogRoutes);
 app.use("/", indexRoutes);
+app.use("/blogs/:id/comments", commentRoutes);
 
 // PASSPORT CONFIGURATION
 // app.use(require('express-session')({

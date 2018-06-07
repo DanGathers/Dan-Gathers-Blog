@@ -24,12 +24,4 @@ body.mainshow
             a.edit-blog(href='/blogs/edit/' + blogShow._id) Edit Blog
             form(action='/blogs/' + blogShow._id + '?_method=DELETE' method="POST")
                 br
-                button.del-button Delete Blog
-    .comment-room
-        .comment-room-wrapper
-            .comment-room-floor
-                form.blog-chatbox(action='/blogs/' + blogShow._id method="POST")
-                    .chatroom
-                        textarea.chatter(type="text" name="comment" placeholder="text")
-                    .chat-submit
-                        button.chatSubmit Submit    
+                button.del-button Delete Blog 

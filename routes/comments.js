@@ -13,4 +13,8 @@ router.get("/new", (req, res) => {
     });
 });
 
+router.post("/blogs/:id/comments", (req, res) => {
+
+});
+
 module.exports = router;

@@ -25,5 +25,7 @@ body.mainshow
             form(action='/blogs/' + blogShow._id + '?_method=DELETE' method="POST")
                 br
                 button.del-button Delete Blog
+                p.com-submit
+                    a.comSubmit(href="/blogs/" + blogShow._id + "/comments/new") add comment
         .comment-box
              

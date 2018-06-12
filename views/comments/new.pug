@@ -3,3 +3,7 @@ title New Comment
 link(text="text/css" rel="stylesheet" href="../styles/new.css")
 
 h1 This is the comments section
+.comm-box
+    h1 Add New Comment for #[h1= blogComment.title]
+        .comm-form
+            form.com-room(action="/blogs" + blogComment._id + "/comments" method="POST")

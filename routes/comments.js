@@ -1,10 +1,16 @@
 const express = require('express');
-const router = express.Router();
+const router = express.Router({mergeParams: true});
 let Blog = require('../models/dansblog');
 let Comment = require ('../models/comment');
 
 router.get("/new", (req, res) => {
-    res.render("comments/new");
+    Blog.findById(req.params.id, function(err, foundBlog) {
+        if(err) {
+            console.log(err);
+        } else {
+            res.render("comments/new", {blogComment: foundBlog});          
+        }
+    });
 });
 
 module.exports = router;

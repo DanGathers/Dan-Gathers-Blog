@@ -26,7 +26,7 @@ const blogRoutes    = require('./routes/dansblog'),
 
 app.use("/blogs", blogRoutes);
 app.use("/", indexRoutes);
-app.use("/blogs/:id/comments", commentRoutes);
+app.use("/blogs/:id/comments/", commentRoutes);
 
 // PASSPORT CONFIGURATION
 // app.use(require('express-session')({

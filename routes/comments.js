@@ -13,8 +13,23 @@ router.get("/new", (req, res) => {
     });
 });
 
-router.post("/blogs/:id/comments", (req, res) => {
-
+router.post("/", (req, res) => {
+    Blog.findById(req.params.id, (err, blogComment) => {
+        if(err){
+            console.log(err);
+            res.redirect("/blogs");
+        } else {
+            Comment.create(req.body.comment, (err, comment) => {
+                if(err){
+                    console.log(err);
+                } else {
+                    blogComment.comments.push(comment);
+                    blogComment.save();
+                    res.redirect('/blogs');
+                }
+            })
+        }
+    })
 });
 
 module.exports = router;

@@ -6,6 +6,12 @@ let blogSchema = new mongoose.Schema({
     image: String,
     description: String,
     blogpost: String,
+    comments: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Comment"
+        }
+    ],
     created: {type: Date, default: Date.now},
 });
 

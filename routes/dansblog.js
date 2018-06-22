@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-let Blog = require('../models/dansblog')
+let Blog = require('../models/dansblog');
 
 //INDEX ROUTE show all blogs
 router.get("/", function(req, res) {
@@ -38,7 +38,7 @@ router.get("/new", function(req, res) {
 
 //SHOW ROUTE show blog
 router.get("/:id", function(req, res) {
-    Blog.findById(req.params.id, function(err, foundBlog) {
+    Blog.findById(req.params.id).populate("comments").exec (function(err, foundBlog) {
         if(err) {
             console.log(err);
         } else {

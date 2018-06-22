@@ -28,4 +28,7 @@ body.mainshow
                 p.com-submit
                     a.comSubmit(href="/blogs/" + blogShow._id + "/comments/new") add comment
         .comment-box
-             
+             each comm in blogShow.comments
+                .commShow
+                    p.commentShow= comm.text
+                    p.authorSig= comm.author

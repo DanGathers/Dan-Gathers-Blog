@@ -29,17 +29,17 @@ app.use("/", indexRoutes);
 app.use("/blogs/:id/comments/", commentRoutes);
 
 // PASSPORT CONFIGURATION
-// app.use(require('express-session')({
-//       secrete: "is it safe",
-//       resave: false,
-//       saveUninitialized: false
-// }));
+app.use(require('express-session')({
+      secret: "whatever",
+      resave: false,
+      saveUninitialized: false
+}));
 
-// app.use(passport-initialize());
-// app.use(passport-session());
-// passport.use(new localStrategy(User.authenticate()));
-// passport.serializeUser(User.serializeUser());
-// passport.deserializeUser(User.deserializeUser());
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new localStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 
 app.listen(4000, () => {
